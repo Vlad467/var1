@@ -671,7 +671,8 @@ top: -20px;
         .form {
             width: 100%;
             top: 0;
-            height: 520px;
+            height: 100vh;
+            max-height: 520px;
             overflow:auto;
         }
 
