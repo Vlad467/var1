@@ -491,7 +491,7 @@ top: -20px;
 
 
     .top {
-        display: none;
+        opacity: 0.1;
     }
 
     .consultation-bg h2 {
