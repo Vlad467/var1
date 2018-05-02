@@ -670,9 +670,11 @@ ul {
     background-color: white;
     z-index: 99;
     left: 0;
-    transition-duration: .9s;
-    transition-property: left;
-    transition-timing-function: ease-in-out;
+    -webkit-transition: left 0.9s ease-in-out;;
+    -moz-transition: left 0.9s ease-in-out;;
+    -ms-transition: left 0.9s ease-in-out;;
+    -o-transition: left 0.9s ease-in-out;;
+    transition: left 0.9s ease-in-out;;
 
 
 
@@ -1395,9 +1397,13 @@ background: url(../images/bg/man.png) center no-repeat;
 }
 .closed {
     left: -600px;
-    transition-duration: .9s;
-    transition-property: left;
+
     transition-timing-function: ease-in-out;
+    -webkit-transition: left .9s ease-in-out;
+    -moz-transition: left .9s ease-in-out;
+    -ms-transition: left .9s ease-in-out;
+    -o-transition: left .9s ease-in-out;
+    transition: left .9s ease-in-out;
 
 }
 .close {
