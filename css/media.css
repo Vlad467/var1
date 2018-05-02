@@ -492,7 +492,7 @@ top: -20px;
 
 
     .top {
-        opacity: 0.1;
+        display: none;
     }
 
     .consultation-bg h2 {
@@ -613,7 +613,9 @@ top: -20px;
         .block2 .list {
             margin-top: 20px
         }
-
+    .top {
+        display: none;
+    }
         .align-middle {
             position: absolute;
             top: 20px;
