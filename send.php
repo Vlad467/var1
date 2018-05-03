@@ -53,7 +53,7 @@ if( !empty($_POST['name4']) && !empty($_POST['phone4'])){
     fclose($fopen);
     mail("crazymen467@gmail.com", $subject, $message, "Content-type:text/plain; windows-1251");
 }
-if( !empty($_POST['name5']) && !empty($_POST['phone5'])){
+if( !empty($_POST['name5']) && !empty($_POST['phone5']) && !empty($_POST['email5']) && !empty($_POST['sel1']) && !empty($_POST['sel2']) && !empty($_POST['sel3']) && !empty($_POST['width']) && !empty($_POST['length'])){
     $phone = trim(htmlspecialchars($_POST['phone5']));
     $name = trim(htmlspecialchars($_POST['name5']));
     $email = trim(htmlspecialchars($_POST['email5']));
@@ -65,7 +65,6 @@ if( !empty($_POST['name5']) && !empty($_POST['phone5'])){
     $subject = "Бесплатный расчет";
     $message = "Имя:$name \r\n";
     $message.= "Номер телефона: $phone \r\n";
-
     $message.= "Тип постройки: $sel1 \r\n";
     $message.= "Материал стен: $sel2 \r\n";
     $message.= "Количество этажей: $sel3 \r\n";
