@@ -178,10 +178,10 @@
             <div class="sale-menu-over">
             <span class="close"></span>
                 <h2>Фиксируйте скидку<br> на весь <span>2018 год</span></h2>
-            <form>
+            <form class="form-fix">
 
-                <input name="name" placeholder="Введите ваше имя">
-                <input type="tel" class="tel4" name="phone" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}">
+                <input name="name4" placeholder="Введите ваше имя" pattern="[a-zA-Zа-яА-Я]+" title="Только буквы"  required>
+                <input type="tel" class="tel4" name="phone4" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
               <div class="align"><button class="button test" type="submit">Зафиксировать</button></div>
                 <p class="warning"><span>Внимание!</span> Все поля обязательны для
                     заполнения. Отправляя форму, Вы
@@ -233,8 +233,8 @@
                 <div class="select-wrapper">
                     <div class="select-arrow-3"></div>
                     <div class="select-arrow-3"></div>
-                    <select>
-                         <option dislabled>Тип постройки</option>
+                    <select name="sel1" required>
+                         <option value ="">Тип постройки</option>
                          <option>Дом</option>
                          <option>Гостиница</option>
                          <option>Баня</option>
@@ -248,8 +248,8 @@
                 <div class="select-wrapper">
                     <div class="select-arrow-3"></div>
                     <div class="select-arrow-3"></div>
-                    <select>
-                        <option dislabled>Материал стен</option>
+                    <select name="sel2" required>
+                        <option value ="">Материал стен</option>
                         <option>Кирпич</option>
                         <option>Поромакс</option>
                         <option>Газоблок</option>
@@ -263,22 +263,22 @@
                 <div class="select-wrapper">
                     <div class="select-arrow-3"></div>
                     <div class="select-arrow-3"></div>
-                    <select>
-                        <option dislabled>Количество этажей</option>
+                    <select name="sel3" required>
+                        <option value ="">Количество этажей</option>
                         <option>1</option>
                         <option>1 с мансардой</option>
                         <option>2</option>
                         <option>3</option>
                     </select>
                 </div>
-                <input type="email" class="email" name="email" placeholder="Ваш email">
+                <input type="email" class="email" name="email5" placeholder="Ваш email" required>
                 <div class="warning"><span>Внимание!</span> Все поля обязательны для
                     заполнения. Отправляя форму, Вы
                     соглашаетесь с <a href="#">политикой обработки данных</a></div>
-                <input type="text" name="width" placeholder="Ширина">
-                <input type="text" name="length" placeholder="Длина">
-                <input type="text" name="name" placeholder="Введите ваше имя">
-                <input type="tel" class="tel5"  name="phone" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}">
+                <input type="text" name="width" placeholder="Ширина" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
+                <input type="text" name="length" placeholder="Длина" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
+                <input type="text" name="name5" placeholder="Введите ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" title="Только буквы" required>
+                <input type="tel" class="tel5"  name="phone5" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
                 <button type="submit" class="button">Отправить</button>
             </form>
         </div>
@@ -530,15 +530,15 @@
             <p>Наш консультант свяжется с вами</p>
         </div>
         <div class="callback form target">
-            <form class="callback">
+            <form class="callback" name="callback">
                 <span class="close"></span>
                 <h2>Заказать  звонок</h2>
                 <p>Мы можем позвонить вам абсолютно бесплатно! Укажите свое имя, номер телефона и предпочтительное время звонка. Наши специалисты ответят на любые возникшие вопросы!</p>
-                <input type="text" name="name" placeholder="Введите ваше имя">
-                <input type="tel" class="tel1"  name="phone" placeholder="Введите ваш телефон">
-                <input type="text" name="comment" placeholder="Ваши комментарии">
+                <input type="text" name="name1" placeholder="Введите ваше имя" pattern="[a-zA-Zа-яА-Я]+" title="Только буквы"  required>
+                <input type="tel" class="tel1"  name="phone1" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
+                <input type="text" name="comment1" placeholder="Ваши комментарии" required>
                 <div class="button-align">
-                <button type="submit">Отправить</button>
+                <button type="submit" name="submit1" >Отправить</button>
                 </div>
                 <p class="warning"><span>Внимание!</span> Все поля обязательны для
                     заполнения. Отправляя форму, Вы
@@ -550,9 +550,9 @@
                 <span class="close"></span>
                 <h2>Заказать  выезд инженера</h2>
                 <p>Мы можем позвонить вам абсолютно бесплатно! Укажите свое имя, номер телефона и предпочтительное время звонка. Наши специалисты ответят на любые возникшие вопросы!</p>
-                <input type="text" name="name" placeholder="Введите ваше имя">
-                <input  name="phone" class="tel2" type="tel"  placeholder="Введите ваш телефон">
-                <input type="text" name="comment" placeholder="Ваши комментарии">
+                <input type="text" name="name2" placeholder="Введите ваше имя" pattern="[a-zA-Zа-яА-Я]+" title="Только буквы"  required>
+                <input  name="phone2" class="tel2" type="tel"  placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required>
+                <input type="text" name="comment2" placeholder="Ваши комментарии">
                 <div class="button-align">
                     <button class="test" type="submit">Отправить</button>
                 </div>
@@ -566,11 +566,11 @@
                 <span class="close"></span>
                 <h2>Заказать консультацию</h2>
                 <p>Мы можем позвонить вам абсолютно бесплатно! Укажите свое имя, номер телефона и предпочтительное время звонка. Наши специалисты ответят на любые возникшие вопросы!</p>
-                <input type="text" name="name" placeholder="Введите ваше имя">
-                <input id="phone" type="tel" class="tel3" name="phone" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}">
-                <input type="text" name="comment" placeholder="Ваши комментарии">
+                <input type="text" name="name3" placeholder="Введите ваше имя" pattern="[a-zA-Zа-яА-Я]+" title="Только буквы"  required>
+                <input id="phone" type="tel" class="tel3" name="phone3" placeholder="Введите ваш телефон" pattern="[\+]\d{1}[\ ][\(]\d{3}[\)][\ ]\d{3}[\ ]\d{2}[\ ]\d{2}" title="Только цифры" required">
+                <input type="text" name="comment3" placeholder="Ваши комментарии">
                 <div class="button-align">
-                    <button class="test" type="submit">Отправить</button>
+                    <button name="test" type="submit">Отправить</button>
                 </div>
                 <p class="warning"><span>Внимание!</span> Все поля обязательны для
                     заполнения. Отправляя форму, Вы
@@ -581,6 +581,7 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
 
 
 </body>
